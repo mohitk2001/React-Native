@@ -2,11 +2,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet,Image, Text, View,TextInput } from 'react-native';
 import First from './src/Screens/First';
 import FlatListTute from './src/Screens/FlatListTute';
+import NetflixCard from './src/Screens/NetflixCard';
+import NetflixCard2 from './src/Screens/NetflixCard2';
 export default function App() {
   return (
     <View style={styles.container}>
-      <First />
-      <FlatListTute/>
+      {/* <First /> */}
+      {/* <FlatListTute/> */}
+      <NetflixCard/>
+      <NetflixCard2/>
+      <NetflixCard/>
     </View>
   );
 }
@@ -14,7 +19,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     width:"100%",
-    flex: 1,
     flexDirection:"column",
     backgroundColor: '#fff',
     alignItems: 'center',
