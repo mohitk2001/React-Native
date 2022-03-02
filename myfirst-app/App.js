@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet,Image, Text, View,TextInput } from 'react-native';
+import ChallengeFlatlist from './src/Screens/ChallengeFlatlist';
+import Counter from './src/Screens/Counter';
 import First from './src/Screens/First';
 import FlatListTute from './src/Screens/FlatListTute';
 import NetflixCard from './src/Screens/NetflixCard';
@@ -9,9 +11,11 @@ export default function App() {
     <View style={styles.container}>
       {/* <First /> */}
       {/* <FlatListTute/> */}
-      <NetflixCard/>
-      <NetflixCard2/>
-      <NetflixCard/>
+      {/* <NetflixCard/> */}
+      {/* <NetflixCard2/> */}
+      {/* <NetflixCard/> */}
+      {/* <ChallengeFlatlist/> */}
+      <Counter/>
     </View>
   );
 }
