@@ -8,19 +8,29 @@ import FlatListTute from './src/Screens/FlatListTute';
 import NetflixCard from './src/Screens/NetflixCard';
 import NetflixCard2 from './src/Screens/NetflixCard2';
 import FormInput from './src/Screens/FormInput';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+const Stack = createNativeStackNavigator();
+import Home from './src/Screens/Home';
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <First /> */}
-      {/* <FlatListTute/> */}
-      {/* <NetflixCard/> */}
-      {/* <NetflixCard2/> */}
-      {/* <NetflixCard/> */}
-      {/* <ChallengeFlatlist/> */}
-      {/* <Counter/> */}
-      {/* <Color/> */}
-      <FormInput/>
-    </View>
+    // <View style={styles.container}>
+    //   {/* <First /> */}
+    //   {/* <FlatListTute/> */}
+    //   {/* <NetflixCard/> */}
+    //   {/* <NetflixCard2/> */}
+    //   {/* <NetflixCard/> */}
+    //   {/* <ChallengeFlatlist/> */}
+    //   {/* <Counter/> */}
+    //   {/* <Color/> */}
+    // </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name='Home' component={Home}/>
+        <Stack.Screen name="Login" component={FormInput}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+    
   );
 }
 

@@ -2,12 +2,13 @@ import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React,{useState} from 'react'
 import { TouchableOpacity,Alert } from 'react-native'
 import Checkbox from 'expo-checkbox'
-const FormInput = () => {
+const FormInput = ({navigation}) => {
     const [agree,setAgree]=useState(false);
     const [name, setName] = useState("");
     const [password, setPassword] = useState("")
     const submit=()=>{
         Alert.alert(name +" and "+ password);
+        navigation.navigate("Home",{name:`${name}`})
     }
   return (
     <View style={styles.Main_container}>
