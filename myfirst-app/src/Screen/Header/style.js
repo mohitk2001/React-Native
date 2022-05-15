@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles=StyleSheet.create({
     Header_container:{
         width:"100%",
-        marginTop:30,
+        marginTop:10,
         display:"flex",
         flexDirection:"row",
         justifyContent:"space-between"
@@ -13,7 +13,8 @@ const styles=StyleSheet.create({
     },
     Header_logo_image:{
         width:"100%",
-        height:40
+        height:40,
+        resizeMode:"contain"
     },
     Header_Right:{
         width:"50%",
@@ -21,9 +22,15 @@ const styles=StyleSheet.create({
         flexDirection:"row",
         justifyContent:"space-evenly"
     },
+    Hedaer_right_icon:{
+        height:40,
+        width:40,
+        resizeMode:"cover"
+    },
     Header_Text:{
         color:"white"
-    }
+    },
+   
 })
 
 

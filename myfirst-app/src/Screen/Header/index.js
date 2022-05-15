@@ -3,6 +3,9 @@ import React from "react";
 import styles from "./style";
 import Instagram_logo from "../../../assets/Instagram.png";
 import { TouchableOpacity } from "react-native";
+import postPlus from "../../../assets/post.jpg";
+import like from "../../../assets/like.png";
+import message from "../../../assets/message.jpg"
 const Header = () => {
   return (
     <View style={styles.Header_container}>
@@ -12,9 +15,15 @@ const Header = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.Header_Right}>
-        <Text style={styles.Header_Text}>Hi</Text>
-        <Text style={styles.Header_Text}>Hi</Text>
-        <Text style={styles.Header_Text}>Hi</Text>
+      <TouchableOpacity>
+          <Image source={postPlus} style={styles.Hedaer_right_icon} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={like} style={styles.Hedaer_right_icon} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={message} style={styles.Hedaer_right_icon} />
+        </TouchableOpacity>
       </View>
     </View>
   );

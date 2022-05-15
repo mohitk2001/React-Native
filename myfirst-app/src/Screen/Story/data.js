@@ -1,0 +1,44 @@
+const storyData=[
+    
+    {
+        name:"Bohemia",
+        URL:"https://i1.sndcdn.com/avatars-000152883811-gempef-t500x500.jpg",
+    },
+    {
+        name:"Gojo",
+        URL:"https://i.pinimg.com/originals/8e/de/53/8ede538fcf75a0a1bd812810edb50cb7.jpg",
+    },
+    {
+        name:"Diljit",
+        URL:"https://www.americanbazaaronline.com/wp-content/uploads/2022/03/Diljit-Dosanjh.jpg",
+    },
+    {
+        name:"Naruto",
+        URL:"https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest?cb=20150124180545",
+    },
+    {
+        name:"Itachi",
+        URL:"https://pbs.twimg.com/profile_images/549117324025135104/780BaO3s_400x400.jpeg",
+    },
+    {
+        name:"Ap",
+        URL:"https://img.mensxp.com/media/content/2022/Jan/ap-header-instagram_61defa0f30c49.jpeg",
+    },
+    {
+        name:"Itachi",
+        URL:"https://pbs.twimg.com/profile_images/549117324025135104/780BaO3s_400x400.jpeg",
+    },
+    {
+        name:"Itachi",
+        URL:"https://pbs.twimg.com/profile_images/549117324025135104/780BaO3s_400x400.jpeg",
+    },
+    {
+        name:"Itachi",
+        URL:"https://pbs.twimg.com/profile_images/549117324025135104/780BaO3s_400x400.jpeg",
+    },
+    {
+        name:"Itachi",
+        URL:"https://pbs.twimg.com/profile_images/549117324025135104/780BaO3s_400x400.jpeg",
+    }
+];
+export default storyData;
