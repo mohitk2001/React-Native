@@ -5,6 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import Story from "./src/Screen/Story";
 import Post from "./src/Screen/Post";
 import postData from "./src/Screen/Post/postData";
+import BottomTab from "./src/Screen/BottomTab";
 const App = () => {
   return (
     <View style={styles.app_container}>
@@ -16,7 +17,7 @@ const App = () => {
           return <Post post_details={post} key={index} />;
         })}
       </ScrollView>
-      
+      <BottomTab/>
     </View>
   );
 };

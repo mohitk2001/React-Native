@@ -8,7 +8,8 @@ const styles=StyleSheet.create({
     post_container:{
         width:"100%",
         height:600,
-        marginTop:10
+        marginTop:10,
+        marginBottom:10
     },
     post_Header:{
         width:"100%",
@@ -49,7 +50,7 @@ const styles=StyleSheet.create({
     post_Bottom_Icons:{
         display:"flex",
         flexDirection:"row",
-        
+        justifyContent:"space-around"
     }
 })
 export default styles

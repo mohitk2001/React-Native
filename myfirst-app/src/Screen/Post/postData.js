@@ -34,6 +34,15 @@ const postData = [
     person_id_who_post: "61d332ecbcdd0252fc12e975",
     avatar_post:
       "https://res.cloudinary.com/mohit001/image/upload/v1641231122/trxndixcpj1fanhx7ynq.png",
+  },
+  {
+    username:"S",
+    imgUrl:"https://res.cloudinary.com/mohit001/image/upload/v1641466338/nlgjlhisdpmtzmbqp1o1.jpg",
+    caption:"Nothin. Much 😂",
+    comments:[],
+    person_id_who_post:"61d6c982c3e83000164367d6",
+    avatar_post:"Photo",
+    likes:[]
   }
 ];
 

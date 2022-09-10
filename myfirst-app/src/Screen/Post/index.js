@@ -1,8 +1,7 @@
 import { Text, View, Image, ScrollView } from "react-native";
 import React from "react";
 import styles from "./style";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faComment, faShare, faHeart } from "@fortawesome/free-solid-svg-icons";
+import Icon from "react-native-vector-icons/FontAwesome";
 //import { Divider } from 'react-native-elements';
 const Post = ({ post_details }) => {
   return (
@@ -44,26 +43,16 @@ const PostBottom = ({ post }) => {
   return (
     <View style={styles.post_Bottom}>
       <View style={styles.post_Bottom_Icons}>
-        <FontAwesomeIcon
-          icon={faHeart}
-          size={30}
-          style={[styles.TEXT_COLOR, { marginHorizontal: 10 }]}
-        />
-        <FontAwesomeIcon
-          icon={faComment}
-          size={30}
-          style={[styles.TEXT_COLOR, { marginHorizontal: 10 }]}
-        />
-        <FontAwesomeIcon
-          icon={faShare}
-          size={30}
-          style={[styles.TEXT_COLOR, { marginHorizontal: 10 }]}
-        />
+      <Icon name="heart" size={30} color="#fff" />
+      <Icon name="comment" size={30} color="#fff" />
+      <Icon name="share" size={30} color="#fff" />
       </View>
-     {
-       post.caption && (<Text style={[styles.TEXT_COLOR,{marginVertical:10}]}>
-        {post.username}  </Text>)
-     }
+      {post.caption && (
+        <Text style={[styles.TEXT_COLOR, { marginVertical: 10 }]}>
+          <Text style={{ fontWeight: "800" }}>{post.username}</Text> :{" "}
+          {post.caption}{" "}
+        </Text>
+      )}
       <View style={styles.post_Bottom_Comments}>
         {!!post.comments.length && (
           <Text style={{ color: "grey" }}>
@@ -73,7 +62,7 @@ const PostBottom = ({ post }) => {
                 ? "all"
                 : post.comments.length
               : ""}{" "}
-            comments
+            {post.comments.length === 1 ? "comment" : "comments"}
           </Text>
         )}
       </View>
