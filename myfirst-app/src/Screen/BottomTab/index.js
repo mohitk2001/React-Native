@@ -18,8 +18,6 @@ const BottomTab = () => {
             <TouchableOpacity onPress={()=>setActive(icon)} key={index}>
                 <BottomIcons iconName={icon}  Active={active} />
             </TouchableOpacity>
-            
-            
             )
       })}
       <Avatar
